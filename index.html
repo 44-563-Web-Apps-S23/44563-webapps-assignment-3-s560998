@@ -9,7 +9,7 @@
               border: 1px solid black;
               border-collapse: collapse;
             }
-            </style>
+        </style>
     </head>
        <body>
            <h1>
@@ -108,6 +108,22 @@
                     </td>
                 </tr>
             </table>
+            <hr>
+            <h3>
+                jQuery Code Display
+            </h3>
+            <a href="https://stackoverflow.com/questions/803688/how-do-i-keep-multiple-divs-the-same-height-using-jquery">
+                <blockquote> 
+                How do I keep multiple DIVs the same height using jQuery?
+                </blockquote>
+            </a>
+            <pre>
+                var maxHeight = 0;
+                $("div").each(function(){
+                if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+                });
+                $("div").height(maxHeight);
+            </pre>
             <a href="aboutme.html">Go to AboutMe</a>            
        </body>
 </html>
